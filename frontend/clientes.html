@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Gestión del Restaurante</h1>
+
+<h2>Gestión de Platillos</h2>
+<form id="formPlato">
+    <input type="text" id="id" placeholder="ID del Platillo" required>
+    <input type="text" id="nombreplato" placeholder="Nombre del Plato" required>
+    <input type="text" id="ingredientes" placeholder="Ingredientes" required>
+    <input type="text" id="precio" placeholder="Precio" required>
+    <button type="submit">Agregar Platillo</button>
+</form>
+
+<h3>Lista de Platillos</h3>
+<table id="platosTable">
+    <thead>
+        <tr>
+            <th>Id del platillo</th>
+            <th>Nombre</th>
+            <th>Ingredientes</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<hr>
+<hr>
+
+<h2>Gestión de Clientes</h2>
+<form id="formCliente">
+    <input type="text" id="idcliente" placeholder="ID" required>
+    <input type="text" id="nombrecliente" placeholder="Nombre" required>
+    <input type="email" id="emailcliente" placeholder="Email" required>
+    <input type="number" id="numerocliente" placeholder="Número de teléfono" required>
+    <input type="number" id="dnicliente" placeholder="DNI" required>
+    <button type="submit">Agregar Cliente</button>
+</form>
+
+<h3>Lista de Clientes</h3>
+<table id="clientesTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>DNI</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<hr>
+<hr>
+
+<h2>Gestión de Órdenes</h2>
+<form id="formOrden">
+    <input type="text" id="orden" placeholder="Número de Orden" required>
+    <input type="text" id="idmesa" placeholder="ID Mesa" required>
+    <input type="text" id="platos_solicitados" placeholder="Platillos solicitados" required>
+    <input type="number" id="cantidades" placeholder="Cantidad" required>
+    <button type="submit">Crear Orden</button>
+</form>
+
+<h3>Lista de Órdenes</h3>
+<table id="ordenesTable">
+    <thead>
+        <tr>
+            <th>Numero de Orden</th>
+            <th>ID Mesa</th>
+            <th>Platos solicitados</th>
+            <th>Cantidad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<hr>
+<hr>
+
+<h2>Gestión de Categorías</h2>
+<form id="formCategoria">
+    <input type="text" id="idcategoria" placeholder="ID de categoria" required>
+    <input type="text" id="nombrecategoria" placeholder="Nombre de la Categoría" required>
+    <input type="text" id="descripcion" placeholder="Platos" required>
+    <button type="submit">Crear Categoría</button>
+</form>
+
+<h3>Lista de Categorías</h3>
+<table id="categoriasTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Categoria</th>
+            <th>Platos</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<hr>
+<hr>
+
+<h2>Gestión de Meseros</h2>
+<form id="formMesero">
+    <input type="text" id="idmesero" placeholder="ID del Mesero" required>
+    <input type="text" id="nombremesero" placeholder="Nombre del Mesero" required>
+    <input type="email" id="emailmesero" placeholder="Email" required>
+    <input type="text" id="numeromesero" placeholder="Número de teléfono" required>
+    <button type="submit">Agregar Mesero</button>
+</form>
+
+<h3>Lista de Meseros</h3>
+<table id="meserosTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Numero</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
